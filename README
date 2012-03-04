@@ -5,8 +5,8 @@ To run this do
 
 ./run.sh
 
-
-It will output any combinations of numbers that sum to zero.
+It will call generate-numbers.py, which creates a file of unique random integers, then 
+will output any combinations of numbers that sum to zero.
 
 You can adjust the parameters for generation of random numbers by editing generate-numbers.py.
 
