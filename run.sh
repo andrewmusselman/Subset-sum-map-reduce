@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Removing output directories if they exist"
 rm o*
 ./generate-numbers.py
 i=0

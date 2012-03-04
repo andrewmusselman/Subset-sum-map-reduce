@@ -2,7 +2,8 @@
 import random
 import os
 fn = 'rns'
-os.remove(fn)
+if os.path.exists(fn):
+  os.remove(fn)
 a = {}
 f = open('rns', 'w')
 for i in range(1,1000000):
