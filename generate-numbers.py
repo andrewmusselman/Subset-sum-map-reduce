@@ -6,7 +6,7 @@ if os.path.exists(fn):
   os.remove(fn)
 a = {}
 f = open('rns', 'w')
-for i in range(1,1000000):
+for i in range(1,10000):
   num = str(random.randint(-10000,10000))
   if num not in a:
     a[num] = 1
