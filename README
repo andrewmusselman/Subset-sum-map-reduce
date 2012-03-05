@@ -1,7 +1,7 @@
 Subset-sum via map-reduce
 andrew.musselman@gmail.com
 
-To run this do 
+To run this using bash and pipes do 
 
 ./run.sh
 
@@ -11,3 +11,12 @@ will output any combinations of numbers that sum to zero.
 You can adjust the parameters for generation of random numbers by editing generate-numbers.py.
 
 
+
+To run this using hadoop-streaming, make sure you have a cluster at least in pseudo-distrubuted 
+mode running, then do
+
+./run-hs.sh
+
+To run it again, delete the output directories and files from your HDFS and re-run by doing
+
+$ for dir in `hadoop fs -ls | cut -b 66-`; do hadoop fs -rmr $dir; done; time ./run-hs.sh
